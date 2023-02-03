@@ -20,6 +20,8 @@ jobs:
           swift-version: "5.7.0"
       - name: Verify swift version
         run: swift --version
+      - name: Verify Sqlite install
+        run:  sqlite3 --version
       - name: Build
         run: swift build
       - name: Run tests
